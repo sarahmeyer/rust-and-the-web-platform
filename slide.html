@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      slidez
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="slide.css" rel="stylesheet" />
+    <script src="slide.js" ></script>
+  </head>
+  <body>
+    <div class="content" id="content">
+      <div class="identifiers">
+        <div>Rust and the Web Platform</div>
+        <div>Sarah Saltrick Meyer</div>
+        <div>@meyerini</div>
+      </div>
+
+      <div class="slide visible-slide">
+        <h1 class="yellow-text">
+          Rust and the Web Platform:
+        </h1>
+        <h1 class="yellow-text">
+          A Rookie's Guide
+        </h1>
+      </div>
+
+      <div class="slide">
+        <h3>
+          Who's talking?
+        </h3>
+        <h2>
+          Sarah Saltrick Meyer
+        </h2>
+        <p class="yellow-text">
+          Twitter: @meyerini
+          <span>
+            💁
+          </span>
+        </p>
+      </div>
+
+      <div class="slide">
+        <h2>
+          What makes the web work?
+        </h2>
+        <ul>
+          <li>
+            Accessible to anyone on the Internet
+          </li>
+          <li>
+            Universal resource locators
+          </li>
+          <li>
+            Hypertext
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <h2>
+          What did hypertext give us that's different from earlier technologies?
+        </h2>
+      </div>
+
+      <div class="slide">
+        <h2>
+          What did hypertext give us that's different from earlier technologies?
+        </h2>
+        <h2 class="capslock largest-text">
+          Instant gratification!
+        </h2>
+      </div>
+
+      <div class="slide">
+        <h2>
+          HTML
+        </h2>
+        <ul>
+          <li>
+            First released by unproblematic king Tim Berners-Lee in 1993
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <img src="images/the_first_webpage.png">
+      </div>
+
+      <div class="slide">
+        <h2>
+          Almost immediately, the quest began to make the Web interactive...
+        </h2>
+      </div>
+
+      <div class="slide">
+        <h2>
+          Java Applets
+        </h2>
+        <ul>
+          <li>
+            Released with the first version of Java on May 23, 1995
+          </li>
+          <li>
+            Delivered as Java bytecode
+          </li>
+          <li>
+            Faster than JavaScript until at least 2011
+          </li>
+          <li>
+            Might require a hefty software download to work
+          </li>
+          <li>
+            Could run on any machine that runs Java
+          </li>
+          <li>
+            Security issues, particularly with unsigned and self-signed applets
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <h2>
+          JavaScript
+        </h2>
+        <ul>
+          <li>
+            First released December 4, 1995
+          </li>
+          <li>
+            Written in a 10 day fever dream by Brendan Eich
+          </li>
+          <li>
+            A "glue language" for HTML, in Marc Andreessen's words
+          </li>
+          <li>
+            Almost immediately reverse-engineered and copied by Microsoft
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <h2>
+          Flash
+        </h2>
+        <ul>
+          <li>
+            Released January 1, 1996
+          </li>
+          <li>
+            Was initially known as "FutureSplash" and developed by a company that started out writing vector graphics software for "pen" computers
+          </li>
+          <li>
+            The viewer software had a conveniently small download size, and was swiftly included in Netscape
+          </li>
+          <li>
+            Accessible tools opened up content creation to non-coders
+          </li>
+          <li>
+            Brutally murdered by Steve Jobs
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <img src="images/flash_lives.png">
+      </div>
+
+      <div class="slide">
+        <h2>
+          The Birth of the Web Platform
+        </h2>
+      </div>
+
+      <div class="slide">
+        <img style="width: 100%;" src="images/The-Birth-of-Venus.jpg">
+      </div>
+
+      <div class="slide">
+        <img style="margin-top: -14rem;" src="images/Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg">
+      </div>
+
+      <div class="slide">
+        <h2>
+          asm.js
+        </h2>
+        <ul>
+          <li>
+            A strict subset of JavaScript
+          </li>
+          <li>
+            Produced by Emscripten in Rust
+          </li>
+          <li>
+            Translates lower-level code to optimized JavaScript
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <h2>
+          Google Native (NaCl)
+        </h2>
+        <ul>
+          <li>
+            Released September 16, 2011
+          </li>
+          <li>
+            Portable Native Client (PNaCl)
+          </li>
+          <li>
+            A Chrome-only solution
+          </li>
+          <li>
+            Lacked an open specification beyond its Chrome implementation
+          </li>
+          <li>
+            Now deprecated in favor of our next contestant...
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <h2>
+          WebAssembly
+        </h2>
+        <ul>
+          <li>
+            An open web standard, defining a binary format and an accompanying assembly-like text format
+          </li>
+          <li>
+            Initially based on the asm.js feature set
+          </li>
+          <li>
+            Announced in 2015, demos in 2016, initial release in 2017
+          </li>
+          <li>
+            Already seeing use in web development (yew framework)
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <h2>
+          WebAssembly
+        </h2>
+        <ul>
+          <li>
+            Can interoperate with JavaScript code with wasm-bindgen
+          </li>
+          <li>
+            Can be packaged as a JavaScript module with wasm-pack
+          </li>
+          <li>
+            Is the dream of isomorphic code in reach again?
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide">
+        <h2>
+          Rust Reach
+        </h2>
+        <img class="friend" src="images/ashleygwilliams.jpeg" />
+      </div>
+
+      <div class="slide">
+        <h2>
+          Rust + wasm = magic!
+        </h2>
+        <img class="friend" src="images/fitzgen.jpeg" />
+      </div>
+
+      <div class="slide">
+        <h2>
+          The Game of Life
+        </h2>
+        <img src="images/game-of-life.png">
+      </div>
+
+      <div class="slide">
+        <h2>
+          The Game of Life
+        </h2>
+        <img src="images/stack_overflow.png">
+      </div>
+
+      <div class="slide">
+        <h2>
+          Exspork (my small child)
+        </h2>
+        <img class="friend" src="images/mgatozzi.jpeg">
+      </div>
+
+      <div class="slide">
+        <img src="images/how_you_can_help.png">
+      </div>
+
+      <div class="slide">
+        <h2>
+          WebAssembly needs
+        </h2>
+        <h2 class="capslock largest-text">
+          You!
+        </h2>
+      </div>
+
+      <div class="slide">
+        <h1 class="yellow-text" >
+          Thanks for listening!
+        </h1>
+        <img class="my-picture" src="images/bad_sith_do_it_well.jpg">
+        <h2> Come argue with me online <span style="color: yellow"> @meyerini </span> </h2>
+      </div>
+    </div>
+  </body>
+</html>
